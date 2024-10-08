@@ -1,0 +1,21 @@
+{
+  "name": "@packages/resolve-dist",
+  "version": "0.0.0-development",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "build-prod": "tsc --project .",
+    "check-ts": "tsc --noEmit",
+    "clean": "rimraf 'lib/**/*.js'",
+    "clean-deps": "rimraf node_modules",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx,.json, ."
+  },
+  "dependencies": {
+    "@packages/resolve-dist": "file:",
+    "fs-extra": "9.1.0"
+  },
+  "files": [
+    "lib"
+  ],
+  "types": "./lib/index.ts"
+}

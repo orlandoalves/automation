@@ -1,0 +1,30 @@
+{
+  "name": "@packages/errors",
+  "version": "0.0.0-development",
+  "description": "Error definitions and utilities for Cypress",
+  "main": "index.js",
+  "browser": "src/index.ts",
+  "scripts": {
+    "build": "../../scripts/run-if-ci.sh tsc || echo 'type errors'",
+    "build-prod": "tsc",
+    "check-ts": "tsc --noEmit",
+    "clean": "rimraf ./src/*.js ./src/**/*.js ./src/**/**/*.js ./test/**/*.js || echo 'cleaned'",
+    "clean-deps": "rimraf node_modules",
+    "comparison": "node -r @packages/ts/register test/support/error-comparison-tool.ts",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx,.json, .",
+    "test": "yarn test-unit",
+    "test-electron": "HTML_IMAGE_CONVERSION=1 xvfb-maybe electron --no-sandbox ./node_modules/.bin/_mocha",
+    "pretest-unit": "yarn clean",
+    "test-unit": "mocha"
+  },
+  "dependencies": {
+    "@packages/errors": "file:",
+    "ansi_up": "5.0.0",
+    "strip-ansi": "6.0.1"
+  },
+  "files": [
+    "src",
+    "dist"
+  ],
+  "types": "src/index.ts"
+}

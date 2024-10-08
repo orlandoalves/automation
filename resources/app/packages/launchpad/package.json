@@ -1,0 +1,34 @@
+{
+  "name": "@packages/launchpad",
+  "version": "0.0.0-development",
+  "private": true,
+  "scripts": {
+    "build": "vite build",
+    "check-ts": "vue-tsc --noEmit",
+    "clean": "rimraf dist && rimraf dist-e2e && echo 'cleaned'",
+    "clean-deps": "rimraf node_modules",
+    "cypress:open": "yarn cypress:run-cypress-in-cypress gulp open --project .",
+    "cypress:open:ct": "yarn cypress:run-cypress-in-cypress gulp open --component --project .",
+    "cypress:run-cypress-in-cypress": "cross-env CYPRESS_INTERNAL_E2E_TESTING_SELF_PARENT_PROJECT=1 TZ=America/New_York",
+    "cypress:run:ct": "yarn cypress:run-cypress-in-cypress node ../../scripts/cypress run --component --project .",
+    "cypress:run:e2e": "yarn cypress:run-cypress-in-cypress node ../../scripts/cypress run --e2e --project .",
+    "dev": "yarn cypress:run-cypress-in-cypress gulp dev --project .",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx,.json, .",
+    "start": "echo 'run yarn dev from the root' && exit 1",
+    "test": "yarn cypress:run:ct && yarn types",
+    "watch": "echo 'run yarn dev from the root' && exit 1"
+  },
+  "dependencies": {
+    "@packages/launchpad": "file:"
+  },
+  "files": [
+    "dist"
+  ],
+  "nx": {
+    "implicitDependencies": [
+      "@packages/graphql",
+      "@packages/frontend-shared",
+      "@packages/data-context"
+    ]
+  }
+}

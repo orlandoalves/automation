@@ -1,0 +1,26 @@
+{
+  "name": "@packages/net-stubbing",
+  "version": "0.0.0-development",
+  "private": true,
+  "main": "./lib/server",
+  "scripts": {
+    "build-prod": "tsc --project .",
+    "check-ts": "tsc --noEmit",
+    "clean-deps": "rimraf node_modules",
+    "lint": "eslint --ext .ts,.json, .",
+    "test": "CYPRESS_INTERNAL_ENV=test mocha -r @packages/ts/register --reporter mocha-multi-reporters --reporter-options configFile=../../mocha-reporter-config.json --exit test/unit/*"
+  },
+  "dependencies": {
+    "@packages/net-stubbing": "file:",
+    "@types/mime-types": "2.1.0",
+    "is-html": "^2.0.0",
+    "istextorbinary": "6.0.0",
+    "lodash": "^4.17.15",
+    "mime-types": "2.1.27",
+    "minimatch": "^3.1.2",
+    "throttle": "^1.0.3"
+  },
+  "files": [
+    "lib"
+  ]
+}

@@ -1,0 +1,10 @@
+.warning-markdown ul {
+    margin-left: 16px;
+    margin-bottom: 16px
+}
+.fade-enter-active[data-v-e98baa47], .fade-leave-active[data-v-e98baa47] {
+  transition: opacity .3s
+}
+.fade-enter-from[data-v-e98baa47], .fade-leave-to[data-v-e98baa47] {
+  opacity: 0
+}

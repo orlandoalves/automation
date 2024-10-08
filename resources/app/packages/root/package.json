@@ -1,0 +1,9 @@
+{
+  "name": "@packages/root",
+  "version": "0.0.0-development",
+  "description": "dummy package pointing at the root package",
+  "main": "index.js",
+  "dependencies": {
+    "@packages/root": "file:"
+  }
+}

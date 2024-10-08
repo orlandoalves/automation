@@ -1,0 +1,29 @@
+
+.description[data-v-3684ea8b] a code {
+
+    --tw-text-opacity: 1;
+
+    color: rgb(73 86 227 / var(--tw-text-opacity))
+}
+.description[data-v-3684ea8b] a {
+
+    --tw-text-opacity: 1;
+
+    color: rgb(73 86 227 / var(--tw-text-opacity));
+
+    outline: 2px solid transparent;
+
+    outline-offset: 2px
+}
+.description[data-v-3684ea8b] a:focus {
+
+    text-decoration-line: underline;
+
+    text-decoration-color: #4956E3
+}
+.description[data-v-3684ea8b] a:hover {
+
+    text-decoration-line: underline;
+
+    text-decoration-color: #4956E3
+}

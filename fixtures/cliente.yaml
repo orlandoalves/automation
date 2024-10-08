@@ -1,0 +1,124 @@
+eFinanceira:
+  evtMovOpFin:
+    ideEvento:
+      indRetificacao: '1'
+      tpAmb: '1'
+      aplicEmi: '2'
+      verAplic: '00000000000000000001'
+    ideDeclarante:
+      cnpjDeclarante: '11111111111111'
+    ideDeclarado:
+      tpNI: '2'
+      tpDeclarado: FATCA101
+      NIDeclarado: '22222222222222'
+      NIF:
+        NumeroNIF: '1234567890123456789012345'
+        PaisEmissaoNIF: US
+      NomeDeclarado: >-
+        Nome do Declarado com 100 caracteres com 100 caracteres com 100
+        caracteres com 100 caracteres com 10
+      NomeOutros:
+        NomePJ:
+          tpNome: OECD203
+          Nome: >-
+            Jose Maria com pelo menos 100 posicoes Jose Maria pelo menos 100
+            posicoes Jose Maria 100 posicoes
+      EnderecoLivre: >-
+        EnderecoLivre com 200 caracteres com 200 caracteres com 200 caracteres
+        com 200 caracteres com 200 caracteres com 200 caracteres com 200
+        caracteres com 200 caracteres com 200 caracteres lalalal
+      PaisEndereco:
+        Pais: BR
+      paisResid:
+        Pais: BR
+      Proprietarios:
+        tpNI: '1'
+        NIProprietario: '12345678901'
+        tpProprietario: CRS801
+        NIF:
+          NumeroNIF: '1234567890123456789012345'
+          PaisEmissaoNIF: US
+        Nome: >-
+          Nome com 100 caracteres com 100 caracteres com 100 caracteres com 100
+          caracteres com 100 caracteres!
+        tpNome: OECD204
+        NomeOutros:
+          NomePF:
+            tpNome: OECD205
+            PrecTitulo: vossa PP excelência
+            Titulo:
+              - Senhor PP1
+              - Senhor PP2
+            PrimeiroNome:
+              Tipo: Tipo Primeiro Nome20
+              Nome: Nome Primeiro Nome20
+            MeioNome:
+              - Tipo: Tipo Meio Nome20
+                Nome: Nome meio Nome um 20
+              - Tipo: Tipo meio Nome 61 20
+                Nome: Nome meio Nome 61 20
+            PrefixoNome:
+              Tipo: tipo Pref Nome c 20
+              Nome: Nome Pref
+            UltimoNome:
+              Tipo: tipo ultimo Nome 20
+              Nome: nome ultimo Nome 20
+            IdGeracao:
+              - Junior 2
+              - Junior 22
+            Sufixo:
+              - PhD 2
+              - PhD 22
+            GenSufixo: Aposentado
+        EnderecoLivre: >-
+          EnderecoLivre com 200 caracteres com 200 caracteres com 200 caracteres
+          com 200 caracteres com 200 caracteres com 200 caracteres com 200
+          caracteres com 200 caracteres com 200 caracteres lalalal
+        PaisEndereco:
+          Pais: BR
+        paisResid:
+          Pais: BR
+        PaisNacionalidade:
+          Pais: BR
+        Reportavel:
+          Pais: BR
+    mesCaixa:
+      anoMesCaixa: '201806'
+      movOpFin:
+        Conta:
+          infoConta:
+            Reportavel:
+              Pais: BR
+            tpConta: '3'
+            subTpConta: '301'
+            tpNumConta: OECD605
+            numConta: 1234|123|1234567890123
+            tpRelacaoDeclarado: '3'
+            Intermediario:
+              GIIN: 98Q96B.00000.LE.250
+              tpNI: '1'
+              NIIntermediario: '48470767100'
+            NoTitulares: '4'
+            Fundo:
+              GIIN: 98Q96B.00000.LE.250
+              CNPJ: '90001504000119'
+            BalancoConta:
+              totCreditos: '150000,00'
+              totDebitos: '100000,00'
+              totCreditosMesmaTitularidade: '100000,00'
+              totDebitosMesmaTitularidade: '100000,00'
+            PgtosAcum:
+              tpPgto: FATCA503
+              totPgtosAcum: '0,00'
+        Cambio:
+          MedJudic:
+            NumProcJud: '123456789'
+            Vara: '01'
+            SecJud: '12'
+            SubSecJud: Subseção judiciária com os 40 caracteres
+            dtConcessao: '2012-01-12'
+          totCompras: '1000000,00'
+          totVendas: '1000000,00'
+          totTransferencias: '1000000,00'
+    _id: ID000000000000000001
+  _xmlns: 'http://www.eFinanceira.gov.br/schemas/evtMovOpFin/v1_2_0'

@@ -1,0 +1,45 @@
+
+[data-cy=metadata] li[data-v-30dba275]:not(:first-child)::before {
+  content: '•';
+  padding-right: 8px;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  --tw-text-opacity: 1;
+  color: rgb(175 179 199 / var(--tw-text-opacity))}
+
+.before-dot[data-v-bc8174f1]:before {
+  content: '•';
+  padding-left: 8px;
+  padding-right: 8px;
+  --tw-text-opacity: 1;
+  color: rgb(175 179 199 / var(--tw-text-opacity))}
+
+.stats-metadata-class li[data-v-e1c57a84]:not(:first-child)::before {
+  content: '.';
+  margin-top: -8px;
+  padding-right: 8px;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  --tw-text-opacity: 1;
+  color: rgb(175 179 199 / var(--tw-text-opacity))}
+
+.grouped-row-class:hover .grouped-row-artifacts[data-v-ccb1f18e], .grouped-row-class:focus-within .grouped-row-artifacts[data-v-ccb1f18e] {
+  opacity: 1 !important;
+}
+
+
+[data-cy=test-group]:hover .test-row-artifacts[data-v-c3d44afe], [data-cy=test-group]:focus-within .test-row-artifacts[data-v-c3d44afe] {
+  opacity: 1 !important;
+}
+
+.debug-empty-view-info-button-override {
+  background-color: white;
+}
+
+#limit-row li[data-v-e273908e]:not(:first-child)::before {
+  content: '•';
+  padding-right: 8px;
+  font-size: 1.125rem;
+  line-height: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(144 149 173 / var(--tw-text-opacity))}

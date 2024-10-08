@@ -1,0 +1,67 @@
+
+/* Override <Button> classes, do not rely on css class order */
+.btn-disabled[data-v-8756dde8] {
+    --tw-border-opacity: 1;
+    border-color: rgb(67 72 97 / var(--tw-border-opacity));
+    --tw-bg-opacity: 1;
+    background-color: rgb(67 72 97 / var(--tw-bg-opacity))
+}
+
+.matches-button[data-v-a493cfab]:before {
+  height: 100%;
+  width: 1px;
+  --tw-scale-y: .5;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  --tw-bg-opacity: 1;
+  background-color: rgb(225 227 237 / var(--tw-bg-opacity));
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.group:focus .matches-button[data-v-a493cfab]:before {
+  background-color: transparent;
+}
+.group:hover .matches-button[data-v-a493cfab]:before {
+  background-color: transparent;
+}
+.matches-button[data-v-a493cfab]:before {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: '';
+}
+.orange-400[data-v-59b4ff47] {
+  border-top: 4px solid #db7903 !important;
+}
+.red-400[data-v-59b4ff47] {
+  border-top: 4px solid #e45770 !important;
+}
+.jade-400[data-v-59b4ff47] {
+  border-top: 4px solid #1fa971 !important;
+}
+.indigo-400[data-v-59b4ff47] {
+  border-top: 4px solid #6470f3 !important;
+}
+.gray-500[data-v-59b4ff47] {
+  border-top: 4px solid #9095ad !important;
+}.RunStatusDots_Tooltip .v-popper__arrow-container {
+  margin-left: 14px;
+}.testing-type-switcher button[role=tab] {
+  z-index: 2;
+}
+.testing-type-switcher div:first-of-type {
+  z-index: 1;
+}
+.testing-type-switcher div:last-of-type {
+  z-index: 3;
+}
+/**
+ * Can't put a group on the parent element as it has downstream effects on the styling of child components
+ * that have individual group stylings.
+ */
+[data-cy=spec-list-directory]:hover .run-all[data-v-3bbdefda], [data-cy=spec-list-directory]:focus-within .run-all[data-v-3bbdefda] {
+  opacity: 1 !important;
+}

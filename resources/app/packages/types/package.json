@@ -1,0 +1,23 @@
+{
+  "name": "@packages/types",
+  "version": "0.0.0-development",
+  "private": true,
+  "main": "index.js",
+  "browser": "src/index.ts",
+  "scripts": {
+    "build-prod": "tsc || echo 'built, with type errors'",
+    "check-ts": "tsc --noEmit",
+    "clean": "rimraf src/*.js src/**/*.js",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx,.json, ."
+  },
+  "dependencies": {},
+  "files": [
+    "src/*"
+  ],
+  "types": "src/index.ts",
+  "workspaces": {
+    "nohoist": [
+      "devtools-protocol"
+    ]
+  }
+}

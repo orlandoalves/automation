@@ -44,7 +44,7 @@ context.only('Actions', () => {
       
     })
   
-    it.skip('CT005 Realiza cadastro de clientes com sucesso na aba perfil 2', () => {
+    it('CT005 Realiza cadastro de clientes com sucesso na aba perfil 2', () => {
 
       cy.get('.btn-outline-light').click({force: true})
       cy.get('#floatingInput').type('1726149213666@primetest.com');
@@ -68,7 +68,7 @@ context.only('Actions', () => {
       
     })
   
-    it.skip('CT006 - Validar pesquisa de cliente cadastrado', () => {
+    it('CT006 - Validar pesquisa de cliente cadastrado', () => {
 
       cy.get('.btn-outline-light').click({force: true})
       cy.get('#floatingInput').type('1726149213666@primetest.com');
@@ -81,7 +81,7 @@ context.only('Actions', () => {
       
     })
   
-    it.skip('CT007 - Editar cliente recem cadastrado', () => {
+    it('CT007 - Editar cliente recem cadastrado', () => {
 
       cy.get('.btn-outline-light').click({force: true})
       cy.get('#floatingInput').type('1726149213666@primetest.com');
@@ -97,7 +97,7 @@ context.only('Actions', () => {
       
     })
   
-    it.skip('CT008 - Excluir cliente recem cadastrado', () => {
+    it('CT008 - Excluir cliente recem cadastrado', () => {
 
       cy.get('.btn-outline-light').click({force: true})
       cy.get('#floatingInput').type('1726149213666@primetest.com');
@@ -112,7 +112,7 @@ context.only('Actions', () => {
      
     })
   
-    it.skip('Validar cadastro de cliente com email invalido na aba perfil', () => {
+    it('Validar cadastro de cliente com email invalido na aba perfil', () => {
 
       cy.get('.btn-outline-light').click({force: true})
       cy.get('#floatingInput').type('1726149213666@primetest.com');
@@ -137,7 +137,7 @@ context.only('Actions', () => {
 
     })
 
-    it.skip('CT011 - validar dowload do xml na aba fiscal', () => {
+    it('CT011 - validar dowload do xml na aba fiscal', () => {
 
       cy.get('.btn-outline-light').click({force: true})
       cy.get('#floatingInput').type('1726149213666@primetest.com');
@@ -149,7 +149,7 @@ context.only('Actions', () => {
            
     })
 
-    it.skip('CT0011-2 - validar download do xml e preenchimento do formulário', () => {
+    it('CT0011-2 - validar download do xml e preenchimento do formulário', () => {
   
       const jsYaml = require('js-yaml');
     
@@ -213,7 +213,7 @@ context.only('Actions', () => {
       });
     });
 
-    it.skip('CT012 - validar importar o arquivo xls', () => {
+    it('CT012 - validar importar o arquivo xls', () => {
 
       cy.get('.btn-outline-light').click({force: true})
       cy.get('#floatingInput').type('1726149213666@primetest.com');
@@ -225,7 +225,7 @@ context.only('Actions', () => {
      
     })
 
-    it.skip('CT013 - validar importar o arquivo xls', () => {
+    it('CT013 - validar importar o arquivo xls', () => {
 
       cy.get('.btn-outline-light').click({force: true})
       cy.get('#floatingInput').type('1726149213666@primetest.com');
@@ -243,7 +243,7 @@ context.only('Actions', () => {
       
     })
 
-    it.skip('CT014 - recuperar senha de acesso', () => {
+    it('CT014 - recuperar senha de acesso', () => {
 
       cy.get('.btn-outline-light').click()
       cy.get('[href="/app/resetsenha"]').click()
